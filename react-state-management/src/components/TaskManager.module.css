@@ -1,0 +1,85 @@
+.container {
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #242629;
+  color: #ffffff;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.inputField {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.addButton {
+  padding: 0.5rem 1rem;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.addButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(30, 144, 255, 0.1);
+  border-radius: 4px;
+}
+
+.taskText {
+  cursor: pointer;
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.removeButton:hover {
+  opacity: 1;
+}
